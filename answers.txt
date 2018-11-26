@@ -1,0 +1,76 @@
+#Exercise 1
+SELECT name FROM robots WHERE source='Star Wars';
+->  C3PO, R2D2
+
+#Exercise 2
+SELECT name FROM robots WHERE personality='anxious';
+-> C3PO
+
+#Exercise 3
+SELECT name FROM recipes WHERE nut_free = true;
+->
+ Butternut Squash Bake
+ Vegetarian Bibimbap
+ French Veggie Loaf
+ Quinoa and Black Beans
+ Juicy Roasted Chicken
+ Garlic Green Beans
+ Stout Slow Cooker Corned Beef and Veggies
+
+#Exercise 4
+SELECT COUNT(name) FROM recipes WHERE gluten_free = true and vegetarian = false;
+
+count 2
+
+#Exercise 5
+SELECT MAX(number_of_legs) FROM animals;
+
+max = 8
+
+#Exercise 6
+SELECT MIN(mins_to_play) FROM board_games;
+
+min = 15
+
+#Exercise 7
+SELECT MAX(minutes_required) FROM recipes;
+
+max= 390
+
+#Exercise8
+SELECT * FROM robots WHERE name LIKE 'M%';
+Marvin         | The Hitchhiker's Guide to the Galaxy | pessimistic   |  3
+ Mr. Butlertron | Clone High                           | compassionate |  5
+
+#Exercise 9
+SELECT name FROM board_games WHERE min_players<=8 AND max_players>=8;
+
+------------------------
+ Arkham Horror
+ Cards Against Humanity
+ Game of Things
+
+ #Exercise 10
+
+ SELECT name FROM animals WHERE swimming = true AND egg_laying = true;
+ name
+ ---------
+  octopus
+  duck
+
+  #Exercise 11
+
+  SELECT name FROM animals WHERE swimming = true AND egg_laying = true AND flying = false
+
+  name
+---------
+octopus
+
+#Exercise 12
+
+SELECT MAX(max_players) FROM board_games;
+
+max
+-----
+ 30
+(1 row)
